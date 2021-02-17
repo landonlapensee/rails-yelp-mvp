@@ -1,0 +1,19 @@
+<h1>New Restaurant</h1>
+<div class="w-25">
+  <%= simple_form_for(@restaurant) do |f| %>
+    <%= f.input :name  %>
+    <%= f.input :address %>
+    <%= f.input :phone_number %>
+    <%= f.input :category %>
+    <%= f.submit :create, class: "btn btn-primary w-100" %>
+  <% end %>
+</div>
+
+<select class="form-select" aria-label="Default select example">
+  <option selected>Category</option>
+  <option value="1">indian</option>
+  <option value="2">italian</option>
+  <option value="3">japanese</option>
+  <option value="4">french</option>
+  <option value="5">belgian</option>
+</select>
